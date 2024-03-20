@@ -30,13 +30,13 @@ int main()
     taxitemAvg = taxTotal / 4;
 
 // Output statements Pre-Tax
-    cout << "David went going to the store " << endl;
+    cout << "David went to the store " << endl;
     cout << "Before tax his items cost the following amount:  " << endl;
-    cout << "Fan: " << setprecision(2) << setw(4) << itemFan << endl;
-    cout << "Charger: " << setprecision(2) << setw(4) << itemCharger << endl;
-    cout << "Juice: " << setprecision(2) << setw(4) << itemJuice << endl;
-    cout << "Chocolate: " << setprecision(2) << setw(4) << itemChoco << endl;
-    cout << "Total Pre-Tax: " << setprecision(2) << setw(8) << itemTotal << endl;
+    cout << setw(4) << "Fan: " << setprecision(4) << setw(4) << itemFan << endl;
+    cout << setw(4) << "Charger: " << setprecision(4) << setw(4) << itemCharger << endl;
+    cout << setw(4) << "Juice: " << setprecision(4) << setw(4) << itemJuice << endl;
+    cout << setw(4) << "Chocolate: " << setprecision(4) << setw(4) << itemChoco << endl;
+    cout << setw(8) << "Total Pre-Tax: " << setprecision(4) << setw(4) << itemTotal << endl;
     cout << "-----------------------------------------------------------------  " << endl;
     
 // Skipping lines
@@ -45,18 +45,18 @@ int main()
 // Output statemnet Post-tax
     cout << "David was charged a sales tax of 4.32%  " << endl;
     cout << "After tax the cost of the items David bought as follows:  " << endl;
-    cout << "Fan (Post-Tax): " << setprecision(2) << setw(4) << taxitemFan << endl;
-    cout << "Charger (Post-Tax): " << setprecision(2) << setw(4) << taxitemCharger << endl;
-    cout << "Juice (Post-Tax): " << setprecision(2) << setw(4) << taxitemJuice << endl;
-    cout << "Chocolate (Post-Tax): " << setprecision(2) << setw(4) << taxitemChoco << endl;
-    cout << "Tax Total: " << setprecision(2) << setw(8) << taxTotal << endl;
+    cout << setw(4) << "Fan (Post-Tax): " << setprecision(4) << setw(4) << taxitemFan << endl;
+    cout << setw(4) << "Charger (Post-Tax): " << setprecision(4) << setw(4) << taxitemCharger << endl;
+    cout << setw(4) << "Juice (Post-Tax): " << setprecision(4) << setw(4) << taxitemJuice << endl;
+    cout << setw(4) << "Chocolate (Post-Tax): " << setprecision(2) << setw(2) << taxitemChoco << endl;
+    cout << setw(8) << "Tax Total: " << setprecision(5) << setw(8) << taxTotal << endl;
     cout << "-----------------------------------------------------------------  " << endl;
     
 // Skipping Lines
     cout << "\n\n\n\n";
 
 // Averages calculated
-    cout << "Average (Before-Tax): " << setprecision(2) << itemAvg << endl;
-    cout << "Average (After-Tax): " << setprecision(2) << taxitemAvg << endl;
+    cout << "Average (Before-Tax): " << setprecision(4) << itemAvg << endl;
+    cout << "Average (After-Tax): " << setprecision(4) << taxitemAvg << endl;
     return 0;
 }
